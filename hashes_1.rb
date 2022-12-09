@@ -1,5 +1,5 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,24 +7,29 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+p foods
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
+foods[:bananas] = 7
 
+p foods
 
 #-------------------
 # Part 2: Email
@@ -39,15 +44,25 @@ p zoo
 
 # Write code that prints your email hash to the terminal.
 
+email = {
+  subject_line: "Hi everyone",
+  sender: "Katie",
+  recipient: ["Mom", "Dad", "Grandpa"],
+  is_draft: false,
+  was_sent: true
+}
+
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
 # YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
 # YOUR CODE HERE
-
+p email.values
 
 #-------------------
 # Part 3: Many Emails - CHALLENGE!
@@ -97,3 +112,20 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = {
+  subject_line: "Hi everyone",
+  sender: "Katie",
+  recipient: ["Mom", "Dad", "Grandpa"],
+  is_draft: false,
+  was_sent: true
+},
+{
+  subject_line: "Lunch plans",
+  sender: "Max",
+  recipient: ["Katie", "Tyler", "Nicole"],
+  is_draft: true,
+  was_sent: false
+}
+
+p emails
